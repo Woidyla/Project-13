@@ -1,0 +1,8 @@
+/**
+ * @param {string} s
+ * @return {string}
+ */
+let reverseVowels = function(s) {
+    const vowel = s.match(/[aeiou]/gi);
+    return s.replace(/[aeiou]/gi, el=> vowel.pop());
+};
